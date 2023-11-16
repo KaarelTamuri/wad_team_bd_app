@@ -12,8 +12,8 @@
             <Post8 />
             <Post9 />
             <Post10 />
-            <Footer />
         </div>
+        <Footer />
     </div>
 </template>
   
