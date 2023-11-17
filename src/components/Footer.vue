@@ -2,7 +2,7 @@
     <footer>
         <ul>
             <li>Kaarel Tamuri</li>
-            <li>Birgit Parra</li>
+            <li>Brigit Parra</li>
             <li>Stina-Marie Maripuu</li>
         </ul>
     </footer>
