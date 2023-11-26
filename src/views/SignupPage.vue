@@ -74,7 +74,7 @@ export default {
     else if (start < 1){alert("Password has to start with an uppercase alphabet character.");}
     else if (char < 1){alert("Password has to include the character '_'.");}
     else {
-      window.location.href = '/';
+      window.location.href = '#/';
     }
     }
 
