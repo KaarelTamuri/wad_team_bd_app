@@ -39,12 +39,12 @@
             <img class="postImg" :src="post.imageLink" :alt="post.title">
         </template>
         <!-- Here we make an interactive like button -->
-        <button @click="toggleLike(post.id)" :class="{ liked: post.isLiked }" class="likeButton">
+        <button @click="toggleLike(post.id)" class="likeButton">
             <img src="like.svg" id="likeButton">
         </button>
-        <span>{{ post.likes }} Likes</span>
+        <p class = "likes">{{ post.likes }} Likes</p>
       </div>
-      <button @click="resetLikes">Reset likes</button>
+      <button @click="resetLikes" class="resetButton">Reset likes</button>
   </template>
 
 <script>
@@ -75,14 +75,12 @@ data() {
     toggleLike(postId) {
       const post = this.data.find(post => post.id === postId);
       if (post) {
-        post.isLiked = !post.isLiked;
         post.likes += 1;
       }
     },
     resetLikes() {
       // Reset all likes for each post in data
       this.data.forEach(post => {
-        post.isLiked = false;
         post.likes = 0;
       });
     },
@@ -100,5 +98,8 @@ data() {
   cursor: pointer;
 }
 
+.likes{
+  color: whitesmoke;
+}
 
 </style>

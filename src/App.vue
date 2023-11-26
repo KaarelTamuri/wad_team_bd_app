@@ -12,6 +12,8 @@ export default {
 
 <style>
 
+
+
 * {
     font-family: sans-serif;
     box-sizing: border-box;
@@ -36,10 +38,6 @@ body {
 ul {
     list-style: none;
 }
-
-
-
-
 
 
 
@@ -193,13 +191,13 @@ ul {
 
 
 
-.box label, .box textarea, .box input[type="file"], .box button {
+.box label, .box textarea, .box input[type="file"], .box button{
     display: block;
     margin-bottom: 20px;
     width: 100%;
 }
 
-.box button {
+.box button, .resetButton{
     cursor: pointer;
 
     background-color: #83715f;
@@ -210,13 +208,13 @@ ul {
     display: block;
 }
 
-.box button:hover{
+.box button:hover, .resetButton:hover, .likeButton:hover{
     background-color: #E5C3A6;
     color: #092747;
     transition: 150ms;
 }
 
-.box button:active{
+.box button:active, .resetButton:active, .likeButton:active{
     opacity: 0.8;
 }
 
@@ -237,6 +235,20 @@ ul {
 ::placeholder{ /*pseudo-element*/
     color: whitesmoke;
     opacity: 0.5;
+}
+
+
+
+.likeButton {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.likes{
+  color: whitesmoke;
 }
 
 
